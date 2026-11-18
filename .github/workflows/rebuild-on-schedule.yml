@@ -1,0 +1,19 @@
+name: Auto Rebuild & Notion Sync
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'
+  workflow_dispatch:
+
+jobs:
+  trigger-cloudflare-build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Cloudflare Deploy Hook
+        if: env.CLOUDFLARE_DEPLOY_HOOK != ''
+        env:
+          CLOUDFLARE_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_DEPLOY_HOOK }}
+        run: |
+          echo "Triggering Cloudflare Pages rebuild..."
+          curl -X POST "$CLOUDFLARE_DEPLOY_HOOK"
+          echo "Rebuild signal sent successfully!"
