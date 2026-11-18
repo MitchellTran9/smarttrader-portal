@@ -1,0 +1,950 @@
+// 84 Official MMO, Cloud & AI Infrastructure Tools
+// Direct checkout & instant automated activation via Telegram Bot: https://t.me/chatgpsplusbot
+
+export const categories = [
+  { id: "all", name: "All Products", count: 84 },
+  { id: "ai_chat", name: "AI Chat & Reasoning", count: 10, icon: "fa-brain" },
+  { id: "ai_code", name: "AI Coding & Cloud", count: 7, icon: "fa-code" },
+  { id: "ai_media", name: "Video, Voice & Creative AI", count: 21, icon: "fa-wand-magic-sparkles" },
+  { id: "mmo_infra", name: "MMO Infra & Secure VPN", count: 12, icon: "fa-shield-halved" },
+  { id: "digital_acc", name: "Digital Accounts & Media", count: 23, icon: "fa-gem" },
+  { id: "edu_office", name: "Software Licenses & Edu", count: 11, icon: "fa-graduation-cap" }
+];
+
+export const products = [
+  // 1. AI Chat & Reasoning (10)
+  {
+    id: "chatgpt",
+    name: "ChatGPT Plus / Team",
+    category: "ai_chat",
+    tag: "Bestseller",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "Unlock GPT-4o, o1 reasoning, Canvas, advanced data analysis, and unlimited DALL-E 3 image generation.",
+    icon: "fa-robot",
+    color: "#10b981",
+    botCmd: "chatgpt"
+  },
+  {
+    id: "claude",
+    name: "Claude Pro / Team",
+    category: "ai_chat",
+    tag: "Top Rated",
+    tagColor: "bg-amber-500/10 text-amber-400 border-amber-500/20",
+    desc: "State-of-the-art coding and complex reasoning with Claude 3.5 Sonnet & Opus, 200k tokens context window.",
+    icon: "fa-brain",
+    color: "#f59e0b",
+    botCmd: "claude"
+  },
+  {
+    id: "grok",
+    name: "xAI Grok 2 / Premium",
+    category: "ai_chat",
+    tag: "Hot Trend",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Elon Musk's real-time AI integrated with platform X data, uncensored responses & Flux image engine.",
+    icon: "fa-bolt",
+    color: "#3b82f6",
+    botCmd: "grok"
+  },
+  {
+    id: "perplexity",
+    name: "Perplexity Pro",
+    category: "ai_chat",
+    tag: "Recommended",
+    tagColor: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
+    desc: "Leading conversational AI search engine with live academic citations and access to all top AI frontier models.",
+    icon: "fa-magnifying-glass-chart",
+    color: "#06b6d4",
+    botCmd: "perplexity"
+  },
+  {
+    id: "deepseek",
+    name: "DeepSeek R1 / V3",
+    category: "ai_chat",
+    tag: "Reasoning AI",
+    tagColor: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20",
+    desc: "Ultra cost-effective mathematical and coding reasoning model for quantitative traders and engineers.",
+    icon: "fa-microchip",
+    color: "#6366f1",
+    botCmd: "deepseek"
+  },
+  {
+    id: "kimi",
+    name: "Kimi AI Moonshot",
+    category: "ai_chat",
+    tag: "Long Context",
+    tagColor: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+    desc: "Process millions of words in seconds, instant financial report extraction, books, and legal documents.",
+    icon: "fa-file-lines",
+    color: "#a855f7",
+    botCmd: "kimi"
+  },
+  {
+    id: "qwen",
+    name: "Qwen AI (Alibaba)",
+    category: "ai_chat",
+    tag: "Multilingual",
+    tagColor: "bg-teal-500/10 text-teal-400 border-teal-500/20",
+    desc: "Premier Asian multilingual frontier AI, high-precision translation, e-commerce, and code generation.",
+    icon: "fa-network-wired",
+    color: "#14b8a6",
+    botCmd: "qwen"
+  },
+  {
+    id: "genspark",
+    name: "GenSpark AI Pro",
+    category: "ai_chat",
+    tag: "Sparkpage",
+    tagColor: "bg-rose-500/10 text-rose-400 border-rose-500/20",
+    desc: "Generate comprehensive interactive Sparkpages and automated ad-free market research syntheses.",
+    icon: "fa-sparkles",
+    color: "#f43f5e",
+    botCmd: "genspark"
+  },
+  {
+    id: "manus",
+    name: "Manus AI Agent",
+    category: "ai_chat",
+    tag: "Autonomous",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "Next-gen fully autonomous agent that plans, browses, and solves end-to-end workflows with zero human intervention.",
+    icon: "fa-user-gear",
+    color: "#10b981",
+    botCmd: "manus"
+  },
+  {
+    id: "antigravity",
+    name: "Antigravity AI",
+    category: "ai_chat",
+    tag: "VIP Access",
+    tagColor: "bg-sky-500/10 text-sky-400 border-sky-500/20",
+    desc: "Specialized enterprise agentic system for deep automation, algorithmic execution, and complex synthesis.",
+    icon: "fa-rocket",
+    color: "#0ea5e9",
+    botCmd: "antigravity"
+  },
+
+  // 2. AI Coding & Cloud (7)
+  {
+    id: "cursor",
+    name: "Cursor Pro AI",
+    category: "ai_code",
+    tag: "#1 AI IDE",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "The world's leading AI-first code editor. Autocompletes multiple lines and edits entire repos with Claude 3.5 Sonnet.",
+    icon: "fa-terminal",
+    color: "#10b981",
+    botCmd: "cursor"
+  },
+  {
+    id: "replit",
+    name: "Replit Core / Agent",
+    category: "ai_code",
+    tag: "Cloud Dev",
+    tagColor: "bg-orange-500/10 text-orange-400 border-orange-500/20",
+    desc: "Zero-setup cloud collaborative workspace with Replit Agent to build and host fullstack web applications.",
+    icon: "fa-cloud-code",
+    color: "#f97316",
+    botCmd: "replit"
+  },
+  {
+    id: "jetbrains",
+    name: "JetBrains All Products Pack",
+    category: "ai_code",
+    tag: "Full License",
+    tagColor: "bg-pink-500/10 text-pink-400 border-pink-500/20",
+    desc: "Complete developer suite: IntelliJ IDEA, PyCharm, WebStorm, PhpStorm, CLion, and Rider.",
+    icon: "fa-laptop-code",
+    color: "#ec4899",
+    botCmd: "jetbrains"
+  },
+  {
+    id: "lovable",
+    name: "Lovable AI Dev",
+    category: "ai_code",
+    tag: "Full-Stack AI",
+    tagColor: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+    desc: "Turn concepts into production-grade web applications in minutes with built-in database and frontend UI.",
+    icon: "fa-wand-magic",
+    color: "#a855f7",
+    botCmd: "lovable"
+  },
+  {
+    id: "railway",
+    name: "Railway Cloud Deploy",
+    category: "ai_code",
+    tag: "High Uptime",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Fast PaaS cloud hosting for Telegram bots, trading EA backends, API webhooks, and databases.",
+    icon: "fa-server",
+    color: "#3b82f6",
+    botCmd: "railway"
+  },
+  {
+    id: "zed",
+    name: "Zed AI Editor",
+    category: "ai_code",
+    tag: "Rust Speed",
+    tagColor: "bg-amber-500/10 text-amber-400 border-amber-500/20",
+    desc: "High-performance multiplayer code editor written in Rust with built-in real-time LLM coding capabilities.",
+    icon: "fa-keyboard",
+    color: "#f59e0b",
+    botCmd: "zed"
+  },
+  {
+    id: "notion",
+    name: "Notion Plus & Notion AI",
+    category: "ai_code",
+    tag: "Productivity",
+    tagColor: "bg-slate-500/10 text-slate-300 border-slate-500/20",
+    desc: "All-in-one team workspace for databases, wiki documentation, and headless CMS powered by Notion AI.",
+    icon: "fa-note-sticky",
+    color: "#94a3b8",
+    botCmd: "notion"
+  },
+
+  // 3. Video, Voice & Creative AI (21)
+  {
+    id: "elevenlabs",
+    name: "ElevenLabs Creator / Pro",
+    category: "ai_media",
+    tag: "#1 AI Voice",
+    tagColor: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
+    desc: "Hyper-realistic voice synthesis & voice cloning across 29 languages for YouTube automation and podcasts.",
+    icon: "fa-microphone-lines",
+    color: "#06b6d4",
+    botCmd: "elevenlabs"
+  },
+  {
+    id: "suno",
+    name: "Suno AI Pro / Premier",
+    category: "ai_media",
+    tag: "AI Music",
+    tagColor: "bg-orange-500/10 text-orange-400 border-orange-500/20",
+    desc: "Create full-length studio quality songs with vocals from text prompts, full commercial rights included.",
+    icon: "fa-music",
+    color: "#f97316",
+    botCmd: "suno"
+  },
+  {
+    id: "runway",
+    name: "Runway Gen-2 / Gen-3 Alpha",
+    category: "ai_media",
+    tag: "Cinematic",
+    tagColor: "bg-violet-500/10 text-violet-400 border-violet-500/20",
+    desc: "Hollywood-grade generative video platform transforming text and images into photorealistic cinematic clips.",
+    icon: "fa-film",
+    color: "#8b5cf6",
+    botCmd: "runway"
+  },
+  {
+    id: "kling",
+    name: "Kling AI Video Pro",
+    category: "ai_media",
+    tag: "Ultra Smooth",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "Photorealistic motion simulation rendering high-definition videos up to 2 minutes with character consistency.",
+    icon: "fa-video",
+    color: "#10b981",
+    botCmd: "kling"
+  },
+  {
+    id: "higgfield",
+    name: "Higgfield AI",
+    category: "ai_media",
+    tag: "Viral Video",
+    tagColor: "bg-lime-500/10 text-lime-400 border-lime-500/20",
+    desc: "Hyper-personalized digital avatars and viral social clips tailored for TikTok and Instagram Reels.",
+    icon: "fa-camera-retro",
+    color: "#84cc16",
+    botCmd: "higgfield"
+  },
+  {
+    id: "heygen",
+    name: "HeyGen AI Avatar",
+    category: "ai_media",
+    tag: "AI Spokesperson",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Professional AI video avatars with flawless lip-sync for scalable corporate presentations and video ads.",
+    icon: "fa-user-tie",
+    color: "#3b82f6",
+    botCmd: "heygen"
+  },
+  {
+    id: "museai",
+    name: "Muse AI Video",
+    category: "ai_media",
+    tag: "Cloud Video",
+    tagColor: "bg-rose-500/10 text-rose-400 border-rose-500/20",
+    desc: "Next-generation ad-free video hosting, streaming, speech-to-text transcriptions, and smart search.",
+    icon: "fa-clapperboard",
+    color: "#f43f5e",
+    botCmd: "museai"
+  },
+  {
+    id: "seedance",
+    name: "Seedance AI",
+    category: "ai_media",
+    tag: "Animation",
+    tagColor: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+    desc: "Creative AI animation suite and smooth motion visual effects for modern digital creators.",
+    icon: "fa-wand-magic-sparkles",
+    color: "#a855f7",
+    botCmd: "seedance"
+  },
+  {
+    id: "openart",
+    name: "OpenArt AI",
+    category: "ai_media",
+    tag: "Art Generator",
+    tagColor: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
+    desc: "Rich AI image playground with precise prompt adherence, creative upscaling, and style transfer.",
+    icon: "fa-palette",
+    color: "#06b6d4",
+    botCmd: "openart"
+  },
+  {
+    id: "canva",
+    name: "Canva Pro / Edu Lifetime",
+    category: "ai_media",
+    tag: "Essential",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Over 100M+ premium graphics, background removal, brand kits, and Magic Studio AI on your own email.",
+    icon: "fa-paint-roller",
+    color: "#3b82f6",
+    botCmd: "canva"
+  },
+  {
+    id: "adobe",
+    name: "Adobe Creative Cloud All Apps",
+    category: "ai_media",
+    tag: "Official License",
+    tagColor: "bg-red-500/10 text-red-400 border-red-500/20",
+    desc: "Complete 20+ app suite including Photoshop, Premiere Pro, Illustrator, After Effects with 100GB Cloud & Firefly.",
+    icon: "fa-bezier-curve",
+    color: "#ef4444",
+    botCmd: "adobe"
+  },
+  {
+    id: "capcut",
+    name: "CapCut Pro PC & Mobile",
+    category: "ai_media",
+    tag: "Viral Editor",
+    tagColor: "bg-teal-500/10 text-teal-400 border-teal-500/20",
+    desc: "Full access to Pro effects, automated AI subtitles, background removal, and 4K watermark-free exports.",
+    icon: "fa-scissors",
+    color: "#14b8a6",
+    botCmd: "capcut"
+  },
+  {
+    id: "figma",
+    name: "Figma Pro / Organization",
+    category: "ai_media",
+    tag: "UI/UX",
+    tagColor: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+    desc: "Unlimited design files, version history, and real-time team collaboration with FigJam.",
+    icon: "fa-pen-nib",
+    color: "#a855f7",
+    botCmd: "figma"
+  },
+  {
+    id: "freepik",
+    name: "Freepik Premium",
+    category: "ai_media",
+    tag: "Vectors & PSD",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Unlimited downloads of millions of curated vectors, stock photos, PSD mockups, and commercial templates.",
+    icon: "fa-images",
+    color: "#3b82f6",
+    botCmd: "freepik"
+  },
+  {
+    id: "gamma",
+    name: "Gamma App Pro",
+    category: "ai_media",
+    tag: "AI Slides",
+    tagColor: "bg-amber-500/10 text-amber-400 border-amber-500/20",
+    desc: "Generate captivating presentations, documents, and web pages from a simple prompt in 30 seconds.",
+    icon: "fa-chalkboard-user",
+    color: "#f59e0b",
+    botCmd: "gamma"
+  },
+  {
+    id: "autodesk",
+    name: "AutoDesk (AutoCAD / 3ds Max)",
+    category: "ai_media",
+    tag: "1-Year License",
+    tagColor: "bg-slate-500/10 text-slate-300 border-slate-500/20",
+    desc: "Professional architectural & 3D engineering software license for AutoCAD, Revit, 3ds Max, and Maya.",
+    icon: "fa-cubes",
+    color: "#64748b",
+    botCmd: "autodesk"
+  },
+  {
+    id: "picsart",
+    name: "PicsArt Gold VIP",
+    category: "ai_media",
+    tag: "Mobile Design",
+    tagColor: "bg-pink-500/10 text-pink-400 border-pink-500/20",
+    desc: "Unlock all premium stickers, filters, AI object removal, and mobile photo editing suites.",
+    icon: "fa-wand-magic",
+    color: "#ec4899",
+    botCmd: "picsart"
+  },
+  {
+    id: "beautycam",
+    name: "BeautyCam VIP",
+    category: "ai_media",
+    tag: "Portrait AI",
+    tagColor: "bg-rose-500/10 text-rose-400 border-rose-500/20",
+    desc: "AI portrait retouching, facial enhancement, and premium vintage camera filters.",
+    icon: "fa-camera",
+    color: "#f43f5e",
+    botCmd: "beautycam"
+  },
+  {
+    id: "wink",
+    name: "Wink VIP Video Retouch",
+    category: "ai_media",
+    tag: "4K AI Repair",
+    tagColor: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20",
+    desc: "Restore blurry clips to crisp 4K, enhance facial features, and adjust body proportions dynamically.",
+    icon: "fa-eye",
+    color: "#6366f1",
+    botCmd: "wink"
+  },
+  {
+    id: "xingtu",
+    name: "Xingtu VIP (醒图)",
+    category: "ai_media",
+    tag: "Douyin Viral",
+    tagColor: "bg-lime-500/10 text-lime-400 border-lime-500/20",
+    desc: "China's sensational image editor used by top Douyin influencers, unlocking all exclusive VIP templates.",
+    icon: "fa-circle-half-stroke",
+    color: "#84cc16",
+    botCmd: "xingtu"
+  },
+  {
+    id: "meitu",
+    name: "Meitu VIP",
+    category: "ai_media",
+    tag: "Anime & Beauty",
+    tagColor: "bg-fuchsia-500/10 text-fuchsia-400 border-fuchsia-500/20",
+    desc: "Flawless AI image beautification and real-time photo-to-anime artistic stylization.",
+    icon: "fa-heart",
+    color: "#d946ef",
+    botCmd: "meitu"
+  },
+
+  // 4. MMO Infra & Secure VPN (12)
+  {
+    id: "gpm_login",
+    name: "GPM Login (Antidetect)",
+    category: "mmo_infra",
+    tag: "Free Key Gift",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "Premier anti-detect browser for managing thousands of isolated browser profiles with zero cross-contamination.",
+    icon: "fa-user-secret",
+    color: "#10b981",
+    botCmd: "gpmlogin"
+  },
+  {
+    id: "proxyscrape",
+    name: "ProxyScrape (DC & Residential)",
+    category: "mmo_infra",
+    tag: "Clean High-Trust IPs",
+    tagColor: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
+    desc: "Global residential and datacenter proxies with low latency and high trust scores for farming and automation.",
+    icon: "fa-network-wired",
+    color: "#06b6d4",
+    botCmd: "proxyscrape"
+  },
+  {
+    id: "nordvpn",
+    name: "NordVPN Plus / Complete",
+    category: "mmo_infra",
+    tag: "#1 Security",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Military-grade encryption, double VPN obfuscation, and zero DNS leaks with blazing-fast speeds.",
+    icon: "fa-shield",
+    color: "#3b82f6",
+    botCmd: "nordvpn"
+  },
+  {
+    id: "surfshark",
+    name: "Surfshark VPN",
+    category: "mmo_infra",
+    tag: "Unlimited Devices",
+    tagColor: "bg-teal-500/10 text-teal-400 border-teal-500/20",
+    desc: "Connect unlimited devices simultaneously with built-in CleanWeb malware and ad blocking.",
+    icon: "fa-water",
+    color: "#14b8a6",
+    botCmd: "surfshark"
+  },
+  {
+    id: "expressvpn",
+    name: "ExpressVPN",
+    category: "mmo_infra",
+    tag: "Ultra Speed",
+    tagColor: "bg-red-500/10 text-red-400 border-red-500/20",
+    desc: "Ultra-fast servers across 105 countries with proprietary Lightway protocol engineered for low latency.",
+    icon: "fa-gauge-high",
+    color: "#ef4444",
+    botCmd: "expressvpn"
+  },
+  {
+    id: "proton",
+    name: "Proton Unlimited (VPN & Mail)",
+    category: "mmo_infra",
+    tag: "Swiss Privacy",
+    tagColor: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+    desc: "End-to-end encrypted Swiss privacy ecosystem: zero-log VPN, anonymous email, and cloud drive.",
+    icon: "fa-lock",
+    color: "#a855f7",
+    botCmd: "proton"
+  },
+  {
+    id: "adguard_vpn",
+    name: "AdGuard VPN & AdBlocker",
+    category: "mmo_infra",
+    tag: "100% Ad-Free",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "Stealth protocol bypassing deep packet inspection alongside world-class tracking and ad blocking.",
+    icon: "fa-shield-halved",
+    color: "#10b981",
+    botCmd: "adguard"
+  },
+  {
+    id: "hma_vpn",
+    name: "HMA VPN (HideMyAss)",
+    category: "mmo_infra",
+    tag: "290+ Countries",
+    tagColor: "bg-amber-500/10 text-amber-400 border-amber-500/20",
+    desc: "IP locations in over 290 countries with IP Shuffle to periodically change addresses automatically.",
+    icon: "fa-mask",
+    color: "#f59e0b",
+    botCmd: "hmavpn"
+  },
+  {
+    id: "hotspot_shield",
+    name: "Hotspot Shield VPN",
+    category: "mmo_infra",
+    tag: "Hydra Protocol",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Proprietary Hydra VPN protocol optimized for gaming, fast downloads, and 4K media streaming.",
+    icon: "fa-fire",
+    color: "#3b82f6",
+    botCmd: "hotspotshield"
+  },
+  {
+    id: "purevpn",
+    name: "PureVPN",
+    category: "mmo_infra",
+    tag: "Dedicated IP",
+    tagColor: "bg-violet-500/10 text-violet-400 border-violet-500/20",
+    desc: "Over 6,500 secure servers with port forwarding options and dedicated clean residential IPs.",
+    icon: "fa-arrow-right-arrow-left",
+    color: "#8b5cf6",
+    botCmd: "purevpn"
+  },
+  {
+    id: "ipvanish",
+    name: "IPVanish VPN",
+    category: "mmo_infra",
+    tag: "Verified Zero-Logs",
+    tagColor: "bg-lime-500/10 text-lime-400 border-lime-500/20",
+    desc: "Audited no-logs VPN provider with high-speed connections and wireguard encryption for all platforms.",
+    icon: "fa-ghost",
+    color: "#84cc16",
+    botCmd: "ipvanish"
+  },
+  {
+    id: "norton_vpn",
+    name: "Norton Secure VPN",
+    category: "mmo_infra",
+    tag: "Cyber Security",
+    tagColor: "bg-yellow-500/10 text-yellow-400 border-yellow-500/20",
+    desc: "Safeguards public Wi-Fi connections and alerts against fraudulent phishing websites and malware.",
+    icon: "fa-shield-virus",
+    color: "#eab308",
+    botCmd: "nortonvpn"
+  },
+
+  // 5. Digital Accounts & Media (23)
+  {
+    id: "telegram_premium",
+    name: "Telegram Premium (Tele)",
+    category: "digital_acc",
+    tag: "Bestseller",
+    tagColor: "bg-cyan-500/10 text-cyan-400 border-cyan-500/20",
+    desc: "4GB file uploads, faster downloads, voice-to-text transcription, exclusive animated stickers & badge.",
+    icon: "fa-paper-plane",
+    color: "#06b6d4",
+    botCmd: "telegram"
+  },
+  {
+    id: "x_premium",
+    name: "X (Twitter) Premium Blue",
+    category: "digital_acc",
+    tag: "Verified Checkmark",
+    tagColor: "bg-slate-500/10 text-slate-300 border-slate-500/20",
+    desc: "Official blue checkmark, 25,000 character posts, ad revenue sharing, and priority algorithm ranking.",
+    icon: "fa-x-twitter",
+    color: "#f8fafc",
+    botCmd: "xtwitter"
+  },
+  {
+    id: "facebook_meta",
+    name: "Facebook Meta Verified / BM",
+    category: "digital_acc",
+    tag: "Meta Verified",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Verified badge protection against impersonation and direct customer support for Facebook profiles & Pages.",
+    icon: "fa-facebook",
+    color: "#3b82f6",
+    botCmd: "facebook"
+  },
+  {
+    id: "linkedin_premium",
+    name: "LinkedIn Business / Sales Nav",
+    category: "digital_acc",
+    tag: "B2B Outreach",
+    tagColor: "bg-sky-500/10 text-sky-400 border-sky-500/20",
+    desc: "Direct InMail credits, who viewed your profile, and advanced search filters for high-value business leads.",
+    icon: "fa-linkedin",
+    color: "#0ea5e9",
+    botCmd: "linkedin"
+  },
+  {
+    id: "discord_nitro",
+    name: "Discord Nitro Full",
+    category: "digital_acc",
+    tag: "Web3 / Gamer",
+    tagColor: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20",
+    desc: "Crisp 4K 60fps streaming, global custom emojis and stickers, and 2 free Server Boosts per month.",
+    icon: "fa-discord",
+    color: "#6366f1",
+    botCmd: "discord"
+  },
+  {
+    id: "netflix",
+    name: "Netflix Premium 4K UltraHD",
+    category: "digital_acc",
+    tag: "4K UHD Cinema",
+    tagColor: "bg-red-500/10 text-red-400 border-red-500/20",
+    desc: "Ad-free 4K Ultra HD streaming with Spatial Audio and individual profiles on all smart devices.",
+    icon: "fa-film",
+    color: "#ef4444",
+    botCmd: "netflix"
+  },
+  {
+    id: "youtube_premium",
+    name: "YouTube Premium",
+    category: "digital_acc",
+    tag: "Ad-Free Music",
+    tagColor: "bg-red-500/10 text-red-400 border-red-500/20",
+    desc: "Ad-free viewing, background playback when screen is locked, offline video downloads, and YouTube Music.",
+    icon: "fa-youtube",
+    color: "#ef4444",
+    botCmd: "youtube"
+  },
+  {
+    id: "spotify",
+    name: "Spotify Premium",
+    category: "digital_acc",
+    tag: "Lossless Audio",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "Ad-free 320kbps high-fidelity music streaming with unlimited track skips and offline mobile playlists.",
+    icon: "fa-spotify",
+    color: "#10b981",
+    botCmd: "spotify"
+  },
+  {
+    id: "apple_bundle",
+    name: "Apple One / Music / iCloud+",
+    category: "digital_acc",
+    tag: "Apple Ecosystem",
+    tagColor: "bg-slate-400/10 text-slate-200 border-slate-400/20",
+    desc: "Apple Music Lossless, 200GB/2TB iCloud storage, Apple TV+ originals, and Apple Arcade bundle.",
+    icon: "fa-apple",
+    color: "#e2e8f0",
+    botCmd: "apple"
+  },
+  {
+    id: "amazon_prime",
+    name: "Amazon Prime Video",
+    category: "digital_acc",
+    tag: "Prime Series",
+    tagColor: "bg-sky-500/10 text-sky-400 border-sky-500/20",
+    desc: "Amazon Original series, award-winning movies in 4K HDR, and exclusive Prime Gaming digital perks.",
+    icon: "fa-amazon",
+    color: "#0ea5e9",
+    botCmd: "amazonprime"
+  },
+  {
+    id: "hbo_max",
+    name: "HBO Max (Max 4K)",
+    category: "digital_acc",
+    tag: "Cinema Max",
+    tagColor: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+    desc: "Warner Bros theatrical blockbusters, DC Universe, HBO series, and Discovery+ library in 4K UHD.",
+    icon: "fa-tv",
+    color: "#a855f7",
+    botCmd: "hbomax"
+  },
+  {
+    id: "fpt_play",
+    name: "FPT Play VIP / MAX",
+    category: "digital_acc",
+    tag: "Live Sports",
+    tagColor: "bg-orange-500/10 text-orange-400 border-orange-500/20",
+    desc: "Live European football championships, UEFA Champions League, and 200+ local TV channels in HD.",
+    icon: "fa-play",
+    color: "#f97316",
+    botCmd: "fptplay"
+  },
+  {
+    id: "vieon",
+    name: "VieON All Access / VIP",
+    category: "digital_acc",
+    tag: "Regional TV",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "Exclusive regional reality TV shows, Asian drama blockbusters, and full live K+ sports broadcasting.",
+    icon: "fa-circle-play",
+    color: "#10b981",
+    botCmd: "vieon"
+  },
+  {
+    id: "iqiyi",
+    name: "iQIYI VIP Gold / Diamond",
+    category: "digital_acc",
+    tag: "Asian Dramas",
+    tagColor: "bg-teal-500/10 text-teal-400 border-teal-500/20",
+    desc: "Early access to trending Asian dramas and anime with Dolby Vision and multi-language subtitles.",
+    icon: "fa-video",
+    color: "#14b8a6",
+    botCmd: "iqiyi"
+  },
+  {
+    id: "crunchyroll",
+    name: "Crunchyroll Mega Fan",
+    category: "digital_acc",
+    tag: "Anime Haven",
+    tagColor: "bg-orange-500/10 text-orange-400 border-orange-500/20",
+    desc: "World's largest licensed anime collection with simulcast episodes broadcasting 1 hour after Japan.",
+    icon: "fa-dragon",
+    color: "#f97316",
+    botCmd: "crunchyroll"
+  },
+  {
+    id: "youku",
+    name: "Youku VIP",
+    category: "digital_acc",
+    tag: "Drama VIP",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Commercial-free access to historical period dramas, variety TV shows, and exclusive Chinese entertainment.",
+    icon: "fa-film",
+    color: "#3b82f6",
+    botCmd: "youku"
+  },
+  {
+    id: "locket",
+    name: "Locket Gold VIP",
+    category: "digital_acc",
+    tag: "Social Widget",
+    tagColor: "bg-amber-500/10 text-amber-400 border-amber-500/20",
+    desc: "Unlimited close friends photo sharing widget with exclusive app icons and extended photo history.",
+    icon: "fa-camera-retro",
+    color: "#f59e0b",
+    botCmd: "locket"
+  },
+  {
+    id: "tiktok_acc",
+    name: "TikTok Shop / Ads Agency",
+    category: "digital_acc",
+    tag: "E-Commerce",
+    tagColor: "bg-slate-400/10 text-slate-200 border-slate-400/20",
+    desc: "Aged high-trust TikTok accounts with enabled TikTok Shop affiliate features and agency ad lines.",
+    icon: "fa-tiktok",
+    color: "#e2e8f0",
+    botCmd: "tiktok"
+  },
+  {
+    id: "wispr_flow",
+    name: "Wispr Flow Voice Dictation",
+    category: "digital_acc",
+    tag: "AI Dictation",
+    tagColor: "bg-indigo-500/10 text-indigo-400 border-indigo-500/20",
+    desc: "Dictate text 3x faster than manual typing with auto-formatting, grammar correction, and AI intelligence.",
+    icon: "fa-lines-leaning",
+    color: "#6366f1",
+    botCmd: "wisprflow"
+  },
+  {
+    id: "brain_fm",
+    name: "Brain.fm Focus Pro",
+    category: "digital_acc",
+    tag: "Deep Focus",
+    tagColor: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+    desc: "Scientifically engineered neural phase-locking audio designed to achieve deep flow states during work & trading.",
+    icon: "fa-headphones",
+    color: "#a855f7",
+    botCmd: "brainfm"
+  },
+  {
+    id: "xbox_pass",
+    name: "Xbox Game Pass Ultimate",
+    category: "digital_acc",
+    tag: "500+ Games",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "Access hundreds of top-tier PC and console titles including EA Play and cloud streaming on any device.",
+    icon: "fa-gamepad",
+    color: "#10b981",
+    botCmd: "xbox"
+  },
+  {
+    id: "roblox",
+    name: "Roblox Premium & Robux",
+    category: "digital_acc",
+    tag: "Metaverse",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Discounted genuine Robux packs and official monthly Premium stipend with in-game trading privileges.",
+    icon: "fa-shapes",
+    color: "#3b82f6",
+    botCmd: "roblox"
+  },
+  {
+    id: "zoom_pro",
+    name: "Zoom Pro Meeting",
+    category: "digital_acc",
+    tag: "Webinars",
+    tagColor: "bg-sky-500/10 text-sky-400 border-sky-500/20",
+    desc: "Host group video meetings up to 30 hours each with 300 active participants and cloud video recording.",
+    icon: "fa-video",
+    color: "#0ea5e9",
+    botCmd: "zoom"
+  },
+
+  // 6. Software Licenses & Education (11)
+  {
+    id: "windows_key",
+    name: "Key Windows 10/11 Pro OEM",
+    category: "edu_office",
+    tag: "Lifetime License",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Official genuine Microsoft digital OEM product key, binding to motherboard permanently with lifetime warranty.",
+    icon: "fa-windows",
+    color: "#3b82f6",
+    botCmd: "windows"
+  },
+  {
+    id: "office_365",
+    name: "Microsoft 365 + 1TB OneDrive",
+    category: "edu_office",
+    tag: "#1 Bestseller",
+    tagColor: "bg-orange-500/10 text-orange-400 border-orange-500/20",
+    desc: "Complete Office apps (Word, Excel, PowerPoint, Outlook) across 5 devices with 1TB cloud storage.",
+    icon: "fa-file-word",
+    color: "#f97316",
+    botCmd: "office365"
+  },
+  {
+    id: "google_one",
+    name: "Google One 2TB Storage",
+    category: "edu_office",
+    tag: "Cloud Storage",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "Direct storage upgrade on your own Gmail account for Google Drive, Photos, and Gmail with 100% security.",
+    icon: "fa-google",
+    color: "#10b981",
+    botCmd: "googleone"
+  },
+  {
+    id: "gmail_aged",
+    name: "Aged Gmail / Google Workspace",
+    category: "edu_office",
+    tag: "High-Trust Account",
+    tagColor: "bg-red-500/10 text-red-400 border-red-500/20",
+    desc: "Aged vintage Google accounts (2015-2022) with organic cookies, warm activity, ideal for Google Ads & SaaS setups.",
+    icon: "fa-envelope",
+    color: "#ef4444",
+    botCmd: "gmail"
+  },
+  {
+    id: "kaspersky",
+    name: "Kaspersky Total Security",
+    category: "edu_office",
+    tag: "#1 Antivirus",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "Industry-leading cybersecurity software stopping ransomware, malware intrusions, and banking phishing.",
+    icon: "fa-shield-heart",
+    color: "#10b981",
+    botCmd: "kaspersky"
+  },
+  {
+    id: "coursera",
+    name: "Coursera Plus",
+    category: "edu_office",
+    tag: "Global Certificates",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "Unlimited access to 7,000+ courses and verified credentials from Google, Meta, IBM, Stanford, and Yale.",
+    icon: "fa-graduation-cap",
+    color: "#3b82f6",
+    botCmd: "coursera"
+  },
+  {
+    id: "udemy",
+    name: "Udemy Personal Plan",
+    category: "edu_office",
+    tag: "Practical Skills",
+    tagColor: "bg-purple-500/10 text-purple-400 border-purple-500/20",
+    desc: "Unlimited learning across 11,000+ top-rated courses spanning coding, algorithmic trading, and digital business.",
+    icon: "fa-chalkboard-user",
+    color: "#a855f7",
+    botCmd: "udemy"
+  },
+  {
+    id: "skillshare",
+    name: "Skillshare Premium",
+    category: "edu_office",
+    tag: "Design & Creative",
+    tagColor: "bg-teal-500/10 text-teal-400 border-teal-500/20",
+    desc: "Online learning platform for creative disciplines: animation, digital illustration, and freelance business.",
+    icon: "fa-book-open",
+    color: "#14b8a6",
+    botCmd: "skillshare"
+  },
+  {
+    id: "duolingo",
+    name: "Duolingo Super Lifetime",
+    category: "edu_office",
+    tag: "Language Learning",
+    tagColor: "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+    desc: "Unlimited hearts, zero ads, personalized error reviews, and accelerated multilingual mastery.",
+    icon: "fa-language",
+    color: "#10b981",
+    botCmd: "duolingo"
+  },
+  {
+    id: "quizlet",
+    name: "Quizlet Plus",
+    category: "edu_office",
+    tag: "AI Flashcards",
+    tagColor: "bg-blue-500/10 text-blue-400 border-blue-500/20",
+    desc: "AI-enhanced flashcard study sets, unlimited practice tests, and offline mobile revision.",
+    icon: "fa-cards",
+    color: "#3b82f6",
+    botCmd: "quizlet"
+  },
+  {
+    id: "kahoot",
+    name: "Kahoot 360 / Pro",
+    category: "edu_office",
+    tag: "Interactive Quiz",
+    tagColor: "bg-violet-500/10 text-violet-400 border-violet-500/20",
+    desc: "Host engaging educational quiz games and large-scale interactive presentations for up to 2,000 attendees.",
+    icon: "fa-award",
+    color: "#8b5cf6",
+    botCmd: "kahoot"
+  }
+];
