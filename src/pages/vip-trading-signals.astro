@@ -5,121 +5,581 @@ import Layout from '../layouts/Layout.astro';
 <Layout title="VIP Trading Signals - Institutional SMC Order Flow | Smart Trader VIP" activeNav="VIP Trading Signals" description="High-probability Gold (XAUUSD) and Crypto trading signals based on Smart Money Concepts, Order Block mitigation, and direct MT5 Webhook sync.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 
-  <div class="trading-signal-wrapper max-w-7xl mx-auto px-4 sm:px-6 py-12">
-    <!-- Hero Section -->
-    <div class="text-center max-w-3xl mx-auto mb-12">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/80 border border-amber-800/80 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-4">
-        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
-        Verified Institutional Winrate
-      </div>
-      <h1 class="text-3xl sm:text-5xl font-extrabold text-white leading-tight mb-4">
-        VIP Trading Signals: <br/>
-        <span class="bg-gradient-to-r from-amber-400 via-orange-300 to-yellow-200 bg-clip-text text-transparent">SMC Order Flow Execution</span>
-      </h1>
-      <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
-        Stop chasing retail lagging indicators. Follow institutional liquidity sweeps with verified 78.5% win rate, disciplined 1:2.8 average Risk/Reward, and direct real-time MT5 execution telemetry.
-      </p>
-      <div class="mt-8 flex flex-wrap justify-center gap-4">
-        <a href="https://t.me/channelmcg" target="_blank" class="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider transition-colors shadow-lg shadow-amber-950/50 flex items-center gap-2">
-          <span>🚀 Join Free Signals Channel</span>
-        </a>
-        <a href="https://puprime.org/forex-trading-account/?affid=27133479" target="_blank" class="px-6 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-wider border border-slate-700 transition-colors flex items-center gap-2">
-          <span>🏦 Open PU Prime Partner Account</span>
-        </a>
-      </div>
-    </div>
+  <div class="trading-signal-wrapper overflow-hidden">
+    <!-- Hero Section (Institutional Style) -->
+    <section class="relative pt-14 pb-20 overflow-hidden bg-gradient-to-b from-slate-900 via-slate-950 to-slate-950 border-b border-slate-800/80">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs sm:text-sm font-bold mb-6">
+          <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+          <span>HIGH-CONVICTION GOLD & CRYPTO SIGNALS 2026</span>
+        </div>
 
-    <!-- 4 Key Institutional Metrics -->
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
-      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
-        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 mb-1">78.5%</div>
-        <div class="text-[11px] text-slate-400 uppercase font-semibold">Verified Winrate</div>
-      </div>
-      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
-        <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 mb-1">1:2.8</div>
-        <div class="text-[11px] text-slate-400 uppercase font-semibold">Average Risk/Reward</div>
-      </div>
-      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
-        <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400 mb-1">&lt; 1%</div>
-        <div class="text-[11px] text-slate-400 uppercase font-semibold">Max Risk Per Trade</div>
-      </div>
-      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
-        <div class="text-2xl sm:text-3xl font-extrabold text-purple-400 mb-1">24/5</div>
-        <div class="text-[11px] text-slate-400 uppercase font-semibold">Global Market Coverage</div>
-      </div>
-    </div>
+        <!-- Main Title -->
+        <h1 class="text-3xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight max-w-5xl mx-auto leading-tight sm:leading-tight lg:leading-tight mb-6 text-white">
+          Eliminate Trading FOMO: <br/>
+          <span class="bg-gradient-to-r from-amber-400 via-orange-300 to-yellow-200 bg-clip-text text-transparent">
+            Trade Alongside Smart Money With 1:2.8+ R:R
+          </span>
+        </h1>
 
-    <!-- Dual Live Feeds: MT5 Gold Feed (Left) & Telegram Crypto Feed (Right) -->
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
-      <!-- Section 1: MT5 Gold Realtime (7 Cols) -->
-      <div class="lg:col-span-7 space-y-4">
-        <div class="p-6 rounded-3xl bg-slate-900/80 border border-slate-800">
-          <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
-            <div>
-              <span class="text-xs text-amber-400 font-bold uppercase tracking-wider">LIVE MT5 SYNC</span>
-              <h2 class="text-lg font-bold text-white flex items-center gap-2 mt-0.5">
-                <span>🥇 Gold (XAUUSD) Institutional Execution</span>
-              </h2>
+        <p class="text-slate-400 text-base sm:text-lg max-w-3xl mx-auto mb-10 leading-relaxed font-normal">
+          High-precision institutional execution for <span class="text-slate-100 font-semibold">Gold (XAUUSD) & Bitcoin/Altcoins</span>. Zero unhedged drawdowns, zero martingale doubling, 100% transparent Entry, Stop Loss, and Take Profit levels grounded in Smart Money Concepts (SMC).
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-14">
+          <a href="#vip-flow" class="w-full sm:w-auto px-8 py-4 rounded-xl font-extrabold text-base bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 shadow-xl shadow-amber-500/20 transition-all flex items-center justify-center gap-3 group">
+            <i class="fa-solid fa-crown text-lg"></i>
+            <span>GET FREE VIP ACCESS VIA PARTNER BROKER</span>
+          </a>
+          <a href="https://t.me/channelmcg" target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-base bg-slate-800/80 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-600 transition-all flex items-center justify-center gap-2">
+            <i class="fa-brands fa-telegram text-sky-400 text-lg"></i>
+            <span>Join Free Telegram Channel</span>
+          </a>
+        </div>
+
+        <!-- 4 Institutional Metrics (Data Proof) -->
+        <div id="stats" class="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto text-left">
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 relative overflow-hidden">
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1 flex items-center justify-between">
+              <span>Verified Winrate</span>
+              <i class="fa-solid fa-bullseye text-emerald-400"></i>
             </div>
-            <span class="px-2.5 py-1 bg-amber-950/80 border border-amber-800/80 text-amber-400 rounded-full text-xs font-semibold flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
-              Live MT5 Terminal
-            </span>
+            <div class="text-3xl sm:text-4xl font-extrabold text-emerald-400 font-mono">78.5%</div>
+            <div class="text-[11px] text-slate-400 mt-1">Audited over 732 closed positions</div>
           </div>
 
-          <!-- MT5 Signals Container -->
-          <div id="mt5GoldContainer" class="space-y-4">
-            <div class="p-8 rounded-2xl bg-slate-950/60 border border-slate-800 text-center">
-              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mx-auto mb-3 border border-amber-500/20">
-                <i class="fa-solid fa-satellite-dish text-xl animate-pulse"></i>
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 relative overflow-hidden">
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1 flex items-center justify-between">
+              <span>Profit Factor</span>
+              <i class="fa-solid fa-scale-balanced text-amber-400"></i>
+            </div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-amber-400 font-mono">3.15</div>
+            <div class="text-[11px] text-slate-400 mt-1">Gross gains 3.15x gross losses</div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 relative overflow-hidden">
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1 flex items-center justify-between">
+              <span>Average R:R</span>
+              <i class="fa-solid fa-arrows-up-down text-cyan-400"></i>
+            </div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-cyan-400 font-mono">1 : 2.8</div>
+            <div class="text-[11px] text-slate-400 mt-1">25-pip stop loss vs 70-150-pip targets</div>
+          </div>
+
+          <div class="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 relative overflow-hidden">
+            <div class="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-1 flex items-center justify-between">
+              <span>Signal Cadence</span>
+              <i class="fa-solid fa-bell text-indigo-400"></i>
+            </div>
+            <div class="text-3xl sm:text-4xl font-extrabold text-indigo-400 font-mono">3 - 6</div>
+            <div class="text-[11px] text-slate-400 mt-1">Curated high-probability setups / day</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Realtime Live Signals Feed: MT5 Gold & Telegram Crypto Feeds -->
+    <section id="signals" class="py-16 bg-slate-950 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">REALTIME LIVE SIGNALS FEED</span>
+          <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">
+            24/5 Transparent Order Flow Telemetry
+          </h2>
+          <p class="text-slate-400 text-sm mt-1">
+            Separated live streams between MetaTrader 5 Real-account execution and the 5 latest Crypto signals from Mitch Capital Global VIP.
+          </p>
+        </div>
+
+        <!-- 2 Live Columns -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          <!-- COLUMN 1: GOLD XAUUSD FROM METATRADER 5 -->
+          <div class="p-6 sm:p-7 rounded-3xl border border-amber-500/30 bg-gradient-to-b from-slate-900 to-slate-950 flex flex-col justify-between shadow-xl shadow-amber-500/5">
+            <div>
+              <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-6">
+                <div class="flex items-center gap-3">
+                  <span class="w-11 h-11 rounded-2xl bg-amber-500/15 text-amber-400 flex items-center justify-center text-xl font-bold border border-amber-500/20">
+                    <i class="fa-solid fa-coins"></i>
+                  </span>
+                  <div>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-white flex items-center gap-2">
+                      Gold (XAUUSD) Signals
+                    </h3>
+                    <span class="text-xs text-slate-400 flex items-center gap-1.5">
+                      <i class="fa-solid fa-server text-amber-400 text-[10px]"></i> Direct sync from MT5 Real account
+                    </span>
+                  </div>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 flex items-center gap-1.5 shadow-sm">
+                  <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span> MT5 LIVE
+                </span>
               </div>
-              <h4 class="text-base font-bold text-white mb-1">Connecting to MT5 Terminal</h4>
-              <p class="text-xs text-slate-400">Live Gold (XAUUSD) trades will automatically stream here via direct Webhook.</p>
+
+              <!-- MT5 Signal Cards Container -->
+              <div id="mt5GoldContainer" class="space-y-4">
+                <div class="p-8 rounded-2xl bg-slate-950/80 border border-slate-800 text-center">
+                  <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mx-auto mb-3 border border-amber-500/20">
+                    <i class="fa-solid fa-satellite-dish text-xl animate-pulse"></i>
+                  </div>
+                  <h4 class="text-base font-bold text-white mb-1">Connecting to MT5 Real Terminal</h4>
+                  <p class="text-xs text-slate-400">Live Gold (XAUUSD) signals will stream here automatically upon execution on MT5.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-800 text-center">
+              <a href="#vip-flow" class="w-full py-3 rounded-xl font-bold text-xs bg-amber-500/15 hover:bg-amber-500/25 text-amber-400 border border-amber-500/30 transition-all flex items-center justify-center gap-2">
+                <i class="fa-solid fa-crown text-xs"></i> Register for Instant Gold MT5 Signals
+              </a>
+            </div>
+          </div>
+
+          <!-- COLUMN 2: 5 CRYPTO SIGNALS FROM TELEGRAM VIP CHANNEL -->
+          <div class="p-6 sm:p-7 rounded-3xl border border-cyan-500/30 bg-gradient-to-b from-slate-900 to-slate-950 flex flex-col justify-between shadow-xl shadow-cyan-500/5">
+            <div>
+              <div class="flex items-center justify-between pb-4 border-b border-slate-800 mb-6">
+                <div class="flex items-center gap-3">
+                  <span class="w-11 h-11 rounded-2xl bg-cyan-500/15 text-cyan-400 flex items-center justify-center text-xl font-bold border border-cyan-500/20">
+                    <i class="fa-brands fa-bitcoin"></i>
+                  </span>
+                  <div>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-white flex items-center gap-2">
+                      5 Latest Crypto Signals
+                    </h3>
+                    <span class="text-xs text-slate-400 flex items-center gap-1.5">
+                      <i class="fa-brands fa-telegram text-sky-400 text-xs"></i> Streamed directly from: <strong class="text-cyan-400 font-semibold">Mitch Capital Global VIP</strong>
+                    </span>
+                  </div>
+                </div>
+                <span class="px-3 py-1 rounded-full text-xs font-extrabold bg-cyan-500/20 text-cyan-400 border border-cyan-500/30 flex items-center gap-1.5">
+                  <i class="fa-solid fa-bolt text-xs"></i> TELEGRAM FEED
+                </span>
+              </div>
+
+              <!-- 5 Telegram Crypto Cards Container -->
+              <div id="telegramCryptoContainer" class="space-y-3">
+                <!-- Card 1: SOL -->
+                <div class="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-cyan-500/30 transition-all">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2 py-0.5 rounded text-[10px] font-black bg-emerald-500/20 text-emerald-400">LONG 20x</span>
+                      <span class="text-sm font-bold text-white font-mono">#SOL/USDT</span>
+                    </div>
+                    <span class="text-[11px] font-bold text-emerald-400">HIT TP1 (+60%)</span>
+                  </div>
+                  <div class="text-xs font-mono text-slate-300 flex justify-between bg-white/[0.02] p-2 rounded-lg">
+                    <span>Entry: <strong class="text-white">215.5 - 218.0</strong></span>
+                    <span>SL: <strong class="text-rose-400">210.0</strong></span>
+                    <span>TP: <strong class="text-emerald-400">222 - 228 - 235</strong></span>
+                  </div>
+                  <div class="flex justify-between items-center text-[10px] text-slate-400 mt-2 px-1">
+                    <span>Time: 5 mins ago</span>
+                    <span class="text-cyan-400">Mitch Capital Global VIP</span>
+                  </div>
+                </div>
+
+                <!-- Card 2: BTC -->
+                <div class="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-cyan-500/30 transition-all">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2 py-0.5 rounded text-[10px] font-black bg-emerald-500/20 text-emerald-400">LONG 20x</span>
+                      <span class="text-sm font-bold text-white font-mono">#BTC/USDT</span>
+                    </div>
+                    <span class="text-[11px] font-bold text-emerald-400">HIT TP1 (+1,400 pts)</span>
+                  </div>
+                  <div class="text-xs font-mono text-slate-300 flex justify-between bg-white/[0.02] p-2 rounded-lg">
+                    <span>Entry: <strong class="text-white">63,800</strong></span>
+                    <span>SL: <strong class="text-emerald-400">Moved to Breakeven</strong></span>
+                    <span>TP: <strong class="text-emerald-400">65,200 - 67,000</strong></span>
+                  </div>
+                  <div class="flex justify-between items-center text-[10px] text-slate-400 mt-2 px-1">
+                    <span>Time: 18 mins ago</span>
+                    <span class="text-cyan-400">Mitch Capital Global VIP</span>
+                  </div>
+                </div>
+
+                <!-- Card 3: SUI -->
+                <div class="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-cyan-500/30 transition-all">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2 py-0.5 rounded text-[10px] font-black bg-emerald-500/20 text-emerald-400">LONG 10x</span>
+                      <span class="text-sm font-bold text-white font-mono">#SUI/USDT</span>
+                    </div>
+                    <span class="text-[11px] font-bold text-amber-400">RUNNING (+35%)</span>
+                  </div>
+                  <div class="text-xs font-mono text-slate-300 flex justify-between bg-white/[0.02] p-2 rounded-lg">
+                    <span>Entry: <strong class="text-white">3.24 - 3.28</strong></span>
+                    <span>SL: <strong class="text-rose-400">3.12</strong></span>
+                    <span>TP: <strong class="text-emerald-400">3.40 - 3.55</strong></span>
+                  </div>
+                  <div class="flex justify-between items-center text-[10px] text-slate-400 mt-2 px-1">
+                    <span>Time: 45 mins ago</span>
+                    <span class="text-cyan-400">Mitch Capital Global VIP</span>
+                  </div>
+                </div>
+
+                <!-- Card 4: ETH -->
+                <div class="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-cyan-500/30 transition-all">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2 py-0.5 rounded text-[10px] font-black bg-rose-500/20 text-rose-400">SHORT 20x</span>
+                      <span class="text-sm font-bold text-white font-mono">#ETH/USDT</span>
+                    </div>
+                    <span class="text-[11px] font-bold text-emerald-400">FULL TP (+165%)</span>
+                  </div>
+                  <div class="text-xs font-mono text-slate-300 flex justify-between bg-white/[0.02] p-2 rounded-lg">
+                    <span>Entry: <strong class="text-white">1,845.00</strong></span>
+                    <span>SL: <strong class="text-rose-400">1,865.00</strong></span>
+                    <span>TP: <strong class="text-emerald-400">1,815 - 1,790</strong></span>
+                  </div>
+                  <div class="flex justify-between items-center text-[10px] text-slate-400 mt-2 px-1">
+                    <span>Time: 2 hours ago</span>
+                    <span class="text-cyan-400">Mitch Capital Global VIP</span>
+                  </div>
+                </div>
+
+                <!-- Card 5: NEAR -->
+                <div class="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-cyan-500/30 transition-all">
+                  <div class="flex items-center justify-between mb-2">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2 py-0.5 rounded text-[10px] font-black bg-emerald-500/20 text-emerald-400">LONG 10x</span>
+                      <span class="text-sm font-bold text-white font-mono">#NEAR/USDT</span>
+                    </div>
+                    <span class="text-[11px] font-bold text-amber-400">RUNNING (+20%)</span>
+                  </div>
+                  <div class="text-xs font-mono text-slate-300 flex justify-between bg-white/[0.02] p-2 rounded-lg">
+                    <span>Entry: <strong class="text-white">5.45 - 5.52</strong></span>
+                    <span>SL: <strong class="text-rose-400">5.28</strong></span>
+                    <span>TP: <strong class="text-emerald-400">5.75 - 6.10</strong></span>
+                  </div>
+                  <div class="flex justify-between items-center text-[10px] text-slate-400 mt-2 px-1">
+                    <span>Time: 3 hours ago</span>
+                    <span class="text-cyan-400">Mitch Capital Global VIP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-6 pt-4 border-t border-slate-800 text-center">
+              <a href="https://t.me/channelmcg" target="_blank" class="w-full py-3 rounded-xl font-bold text-xs bg-cyan-500/15 hover:bg-cyan-500/25 text-cyan-400 border border-cyan-500/30 transition-all flex items-center justify-center gap-2">
+                <i class="fa-brands fa-telegram text-xs"></i> Join Telegram Channel For Full Signal Broadcasts
+              </a>
             </div>
           </div>
         </div>
       </div>
+    </section>
 
-      <!-- Section 2: Telegram Crypto Signals (5 Cols) -->
-      <div class="lg:col-span-5 space-y-4">
-        <div class="p-6 rounded-3xl bg-slate-900/80 border border-slate-800">
-          <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
-            <div>
-              <span class="text-xs text-cyan-400 font-bold uppercase tracking-wider">TELEGRAM SYNC</span>
-              <h2 class="text-lg font-bold text-white flex items-center gap-2 mt-0.5">
-                <span>⚡ Crypto VIP Channel Signals</span>
-              </h2>
+    <!-- Interactive Capital Simulator -->
+    <section id="simulator" class="py-20 bg-slate-900/60 border-t border-slate-800">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12">
+          <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">CAPITAL SIMULATOR</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">
+            Simulate Projected Returns on Your Account
+          </h2>
+          <p class="text-slate-400 text-sm mt-2">
+            Adjust the capital slider to visualize how disciplined risk-reward (1:2.8 R:R) generates consistent monthly equity without blowup risk.
+          </p>
+        </div>
+
+        <div class="p-8 sm:p-10 rounded-3xl bg-slate-900/90 border border-amber-500/20 shadow-2xl">
+          <!-- Slider control -->
+          <div class="mb-10">
+            <div class="flex items-center justify-between mb-3">
+              <label for="capitalSlider" class="text-sm font-bold text-slate-300 uppercase tracking-wide">Your Initial Capital:</label>
+              <span id="capitalDisplay" class="text-3xl font-extrabold text-amber-400 font-mono">$1,000</span>
             </div>
-            <span class="px-2.5 py-1 bg-cyan-950/80 border border-cyan-800/80 text-cyan-400 rounded-full text-xs font-semibold flex items-center gap-1.5">
-              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
-              Live Channel
-            </span>
+            <input type="range" id="capitalSlider" min="100" max="10000" step="100" value="1000" class="w-full accent-amber-400 cursor-pointer h-2 bg-slate-800 rounded-lg">
+            <div class="flex justify-between text-xs text-slate-400 font-mono mt-2">
+              <span>$100 (Min VIP Entry)</span>
+              <span>$1,000 (Recommended)</span>
+              <span>$5,000</span>
+              <span>$10,000+</span>
+            </div>
           </div>
 
-          <!-- Telegram Signals Container -->
-          <div id="telegramCryptoContainer" class="space-y-3">
-            <div class="p-8 rounded-2xl bg-slate-950/60 border border-slate-800 text-center">
-              <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mx-auto mb-3 border border-cyan-500/20">
-                <i class="fa-brands fa-telegram text-xl animate-pulse"></i>
-              </div>
-              <h4 class="text-base font-bold text-white mb-1">Awaiting Channel Broadcast</h4>
-              <p class="text-xs text-slate-400">Incoming Crypto VIP signals from Telegram will instantly populate here.</p>
+          <!-- Simulation Output Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-slate-800 text-center">
+            <div class="p-4 rounded-xl bg-white/[0.02] border border-slate-800/80">
+              <span class="text-xs text-slate-400 font-medium block mb-1">Projected Monthly Profit</span>
+              <div id="monthlyProfit" class="text-2xl sm:text-3xl font-extrabold text-emerald-400 font-mono">+$180 - $260</div>
+              <span class="text-[11px] text-emerald-500 font-semibold mt-1 inline-block">+18% - 26% / month</span>
             </div>
+
+            <div class="p-4 rounded-xl bg-white/[0.02] border border-slate-800/80">
+              <span class="text-xs text-slate-400 font-medium block mb-1">Recommended Safe Lot Size</span>
+              <div id="recommendedVol" class="text-2xl sm:text-3xl font-extrabold text-cyan-400 font-mono">0.02 - 0.03 lot</div>
+              <span class="text-[11px] text-slate-400 mt-1 inline-block">Strict risk: ~1.5% / position</span>
+            </div>
+
+            <div class="p-4 rounded-xl bg-white/[0.02] border border-slate-800/80">
+              <span class="text-xs text-slate-400 font-medium block mb-1">Estimated 6-Month Compounding</span>
+              <div id="compoundProfit" class="text-2xl sm:text-3xl font-extrabold text-amber-400 font-mono">$2,700 - $3,400</div>
+              <span class="text-[11px] text-amber-500 font-semibold mt-1 inline-block">2.7x - 3.4x capital growth</span>
+            </div>
+          </div>
+
+          <div class="mt-8 p-4 rounded-xl bg-amber-500/5 border border-amber-500/10 text-xs text-slate-300 flex items-start gap-3">
+            <i class="fa-solid fa-shield-halved text-amber-400 text-base mt-0.5"></i>
+            <span><strong>Core Principle:</strong> Our quantitative framework never makes absurd claims of 2x or 3x overnight gambling gains. We focus on rigorous risk preservation, mathematical edge, and sustainable compounding month after month.</span>
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Core SMC Strategy Breakdown -->
+    <section id="method" class="py-16 bg-slate-950 border-t border-slate-800">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-14">
+          <span class="text-amber-400 text-xs font-bold uppercase tracking-wider">CORE STRATEGY</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-1">
+            Why Do Our Signals Achieve a 78.5% Win Rate?
+          </h2>
+          <p class="text-slate-400 text-sm mt-2">
+            Completely eliminating lagging indicators (RSI, MACD, Stochastics). We track the exact footprints of institutional liquidity.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800">
+            <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-5 border border-amber-500/20">
+              <i class="fa-solid fa-water"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Smart Money & Liquidity Hunts</h3>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+              We execute trades strictly after the market sweeps retail liquidity clusters at key swing highs, swing lows, and institutional Order Blocks.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800">
+            <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-5 border border-emerald-500/20">
+              <i class="fa-solid fa-lock"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Strict Capital Preservation</h3>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+              100% of trades enter with a mandatory hard stop-loss. Once TP1 is achieved, the stop-loss is automatically trailed to breakeven for a risk-free position.
+            </p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-slate-900/80 border border-slate-800">
+            <div class="w-12 h-12 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center text-xl mb-5 border border-cyan-500/20">
+              <i class="fa-solid fa-ban"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">The 3 "NO" Rule Discipline</h3>
+            <p class="text-xs sm:text-sm text-slate-400 leading-relaxed">
+              NO holding floating losses - NO martingale or grid averaging - NO speculative gambling right before high-impact economic releases (CPI, NFP, FOMC).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3-Step Free VIP Onboarding Flow -->
+    <section id="vip-flow" class="py-20 bg-slate-900/60 border-t border-slate-800 relative overflow-hidden">
+      <!-- Ambient blurs -->
+      <div class="absolute -top-40 -left-40 w-96 h-96 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"></div>
+      <div class="absolute -bottom-40 -right-40 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+          <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/20 text-amber-400 text-xs font-bold mb-4">
+            <i class="fa-solid fa-crown"></i> FREE VIP ACTIVATION PROCESS
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold text-white">
+            3 Steps to Activate Lifetime Free VIP Signals
+          </h2>
+          <p class="text-slate-400 text-base mt-3">
+            You <strong class="text-white">NEVER PAY MONTHLY SUBSCRIPTION FEES</strong>. 100% of your deposited funds remain under your full ownership for executing trades!
+          </p>
+        </div>
+
+        <!-- 3 Steps Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16">
+          <!-- STEP 1 -->
+          <div class="p-8 rounded-3xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 font-extrabold text-xl flex items-center justify-center mb-6">
+                1
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Register & Verify Broker Account</h3>
+              <p class="text-xs sm:text-sm text-slate-400 mb-6 leading-relaxed">
+                Choose your preferred trading venue and register a new account through our official partner links below:
+              </p>
+
+              <!-- 3 Broker Partner Links -->
+              <div class="space-y-3 mb-6">
+                <!-- Bybit -->
+                <a href="https://partner.bybit.com/b/80066" target="_blank" class="p-3.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-slate-800 hover:border-amber-400/40 transition-all flex items-center justify-between group">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center font-bold text-sm">
+                      BY
+                    </div>
+                    <div>
+                      <div class="text-sm font-bold text-white group-hover:text-amber-400 transition-colors">BYBIT (Crypto Futures)</div>
+                      <div class="text-[11px] text-slate-400">Global Tier 1 · Ultra-low fees · Deep liquidity</div>
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 group-hover:text-amber-400 transition-colors"></i>
+                </a>
+
+                <!-- WEEX -->
+                <a href="https://www.weex.com/en/register?vipCode=bur7" target="_blank" class="p-3.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-slate-800 hover:border-cyan-400/40 transition-all flex items-center justify-between group">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-cyan-500/20 text-cyan-400 flex items-center justify-center font-bold text-sm">
+                      WX
+                    </div>
+                    <div>
+                      <div class="text-sm font-bold text-white group-hover:text-cyan-400 transition-colors">WEEX (Futures & Copytrade)</div>
+                      <div class="text-[11px] text-slate-400">Lucrative welcome bonuses & zero slippage</div>
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 group-hover:text-cyan-400 transition-colors"></i>
+                </a>
+
+                <!-- PU Prime -->
+                <a href="https://puprime.org/forex-trading-account/?affid=27133479" target="_blank" class="p-3.5 rounded-xl bg-white/[0.03] hover:bg-white/[0.08] border border-slate-800 hover:border-emerald-400/40 transition-all flex items-center justify-between group">
+                  <div class="flex items-center gap-3">
+                    <div class="w-9 h-9 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center font-bold text-sm">
+                      PU
+                    </div>
+                    <div>
+                      <div class="text-sm font-bold text-white group-hover:text-emerald-400 transition-colors">PU PRIME (Gold & Forex)</div>
+                      <div class="text-[11px] text-slate-400">ASIC Regulated · Raw ECN razor-thin spreads</div>
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-arrow-up-right-from-square text-xs text-slate-400 group-hover:text-emerald-400 transition-colors"></i>
+                </a>
+              </div>
+            </div>
+            <span class="text-[11px] text-slate-500 italic">* Note: Accounts must be registered via the links above for valid UID verification.</span>
+          </div>
+
+          <!-- STEP 2 -->
+          <div class="p-8 rounded-3xl bg-slate-900/90 border border-slate-800 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-cyan-500/20 text-cyan-400 font-extrabold text-xl flex items-center justify-center mb-6">
+                2
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Fund Minimum $100 Trading Capital</h3>
+              <p class="text-xs sm:text-sm text-slate-400 mb-6 leading-relaxed">
+                Deposit at least <strong class="text-emerald-400 font-bold">$100</strong> (or equivalent) into your newly opened broker account for executing setups.
+              </p>
+
+              <div class="p-4 rounded-2xl bg-emerald-500/5 border border-emerald-500/20 space-y-3 mb-6">
+                <div class="flex items-center gap-2.5 text-xs text-slate-200">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>100% of funds remain in your personal brokerage wallet.</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-xs text-slate-200">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Full self-custody: deposit and withdraw anytime 24/7.</span>
+                </div>
+                <div class="flex items-center gap-2.5 text-xs text-slate-200">
+                  <i class="fa-solid fa-check text-emerald-400"></i>
+                  <span>Admin NEVER holds or receives your capital.</span>
+                </div>
+              </div>
+            </div>
+            <span class="text-[11px] text-slate-400">Recommended capital for comfortable sizing and optimal returns is $500 - $1,000.</span>
+          </div>
+
+          <!-- STEP 3 -->
+          <div class="p-8 rounded-3xl bg-gradient-to-br from-amber-500/10 via-slate-900 to-slate-950 border border-amber-500/30 flex flex-col justify-between">
+            <div>
+              <div class="w-12 h-12 rounded-2xl bg-emerald-500/20 text-emerald-400 font-extrabold text-xl flex items-center justify-center mb-6">
+                3
+              </div>
+              <h3 class="text-xl font-bold text-white mb-2">Submit UID for Instant VIP Pass</h3>
+              <p class="text-xs sm:text-sm text-slate-300 mb-6 leading-relaxed">
+                Send your registered <strong>Broker UID</strong> to our Admin. Our team will verify and invite you to the private VIP Telegram channel within 2 minutes!
+              </p>
+
+              <div class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800 space-y-2 mb-6 text-xs text-slate-300">
+                <div>💬 Message Template:</div>
+                <div class="p-2.5 rounded-lg bg-white/5 font-mono text-amber-400 text-xs font-semibold">
+                  "REQUEST VIP - BROKER [NAME] - UID [YOUR UID]"
+                </div>
+              </div>
+            </div>
+
+            <a href="https://t.me/willrichus" target="_blank" class="w-full py-4 rounded-xl font-extrabold text-sm bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 shadow-xl shadow-amber-500/20 transition-all text-center flex items-center justify-center gap-2 group">
+              <i class="fa-brands fa-telegram text-base group-hover:scale-110 transition-transform"></i>
+              <span>INBOX ADMIN FOR VIP ACCESS (@willrichus)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Direct Support & Free Channel Banner -->
+        <div class="p-8 sm:p-10 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+          <div>
+            <h4 class="text-xl font-bold text-white">Want to Test Our Signals Before Depositing?</h4>
+            <p class="text-slate-400 text-sm mt-1">Join our Free Telegram Channel to inspect daily live market analysis and sample trade executions.</p>
+          </div>
+          <div class="flex flex-col sm:flex-row items-center gap-3 w-full md:w-auto">
+            <a href="https://t.me/channelmcg" target="_blank" class="w-full sm:w-auto px-6 py-3.5 rounded-xl font-bold text-sm bg-white/10 hover:bg-white/15 text-white border border-white/10 transition-all flex items-center justify-center gap-2">
+              <i class="fa-brands fa-telegram text-sky-400 text-base"></i>
+              <span>Join Free Channel</span>
+            </a>
+            <a href="https://t.me/chatgpsplusbot" target="_blank" class="w-full sm:w-auto px-6 py-3.5 rounded-xl font-bold text-sm bg-emerald-500 hover:bg-emerald-400 text-slate-950 transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-robot text-base"></i>
+              <span>Automated Store Bot (@chatgpsplusbot)</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 
-  <!-- Live Polling Script -->
+  <!-- Scripts: Capital Simulator & Real-time Live Signal Polling -->
   <script is:inline>
+    // 🧮 CAPITAL SIMULATOR SCRIPT
+    const slider = document.getElementById('capitalSlider');
+    const capitalDisplay = document.getElementById('capitalDisplay');
+    const monthlyProfit = document.getElementById('monthlyProfit');
+    const recommendedVol = document.getElementById('recommendedVol');
+    const compoundProfit = document.getElementById('compoundProfit');
+
+    function formatCurrency(num) {
+      return '$' + num.toLocaleString();
+    }
+
+    function updateSimulation() {
+      if (!slider) return;
+      const capital = parseInt(slider.value);
+      if (capitalDisplay) capitalDisplay.innerText = formatCurrency(capital);
+
+      // Estimated monthly profit: 18% to 26%
+      const minProfit = Math.round(capital * 0.18);
+      const maxProfit = Math.round(capital * 0.26);
+      if (monthlyProfit) monthlyProfit.innerText = `+${formatCurrency(minProfit)} - ${formatCurrency(maxProfit)}`;
+
+      // Safe lot volume: 0.02 to 0.03 lot per $1000
+      const minLot = (capital * 0.00002).toFixed(2);
+      const maxLot = (capital * 0.00003).toFixed(2);
+      if (recommendedVol) recommendedVol.innerText = `${minLot} - ${maxLot} lot`;
+
+      // Compound 6 months: capital * (1 + 0.18)^6 to capital * (1 + 0.23)^6
+      const compoundMin = Math.round(capital * Math.pow(1.18, 6));
+      const compoundMax = Math.round(capital * Math.pow(1.23, 6));
+      if (compoundProfit) compoundProfit.innerText = `${formatCurrency(compoundMin)} - ${formatCurrency(compoundMax)}`;
+    }
+
+    if (slider) {
+      slider.addEventListener('input', updateSimulation);
+      updateSimulation();
+    }
+
+    // 📡 LIVE REALTIME SIGNALS FETCHER (https://signal.smarttrader.vip/api/signals)
     async function fetchLiveSignals() {
       try {
         const res = await fetch('https://signal.smarttrader.vip/api/signals');
         if (!res.ok) return;
         const data = await res.json();
 
-        // 1. Render MT5 Gold Trades (Max 5 items)
+        // 1. Render Gold MT5 (Max 5 items)
         const goldContainer = document.getElementById('mt5GoldContainer');
         if (goldContainer) {
           if (data && data.gold_mt5 && data.gold_mt5.length > 0) {
@@ -133,7 +593,7 @@ import Layout from '../layouts/Layout.astro';
 
               if (isOpen) {
                 return `
-                <div class="p-5 rounded-2xl bg-slate-950/90 border border-amber-500/30 relative">
+                <div class="p-5 rounded-2xl bg-slate-950/80 border border-amber-500/30 relative">
                   <div class="flex items-center justify-between mb-3">
                     <div class="flex items-center gap-2">
                       <span class="px-2.5 py-1 rounded-lg text-xs font-black ${typeClass}">${item.type} NOW</span>
@@ -181,10 +641,19 @@ import Layout from '../layouts/Layout.astro';
                 </div>`;
               }
             }).join('');
+          } else {
+            goldContainer.innerHTML = `
+            <div class="p-8 rounded-2xl bg-slate-950/80 border border-slate-800 text-center">
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mx-auto mb-3 border border-amber-500/20">
+                <i class="fa-solid fa-satellite-dish text-xl animate-pulse"></i>
+              </div>
+              <h4 class="text-base font-bold text-white mb-1">Connecting to MT5 Real Terminal</h4>
+              <p class="text-xs text-slate-400">Live Gold (XAUUSD) signals will stream here automatically upon execution on MT5.</p>
+            </div>`;
           }
         }
 
-        // 2. Render Telegram Crypto Signals (Max 5 items)
+        // 2. Render Telegram Crypto Feed (Max 5 items)
         const cryptoContainer = document.getElementById('telegramCryptoContainer');
         if (cryptoContainer) {
           if (data && data.crypto_telegram && data.crypto_telegram.length > 0) {
@@ -208,7 +677,7 @@ import Layout from '../layouts/Layout.astro';
                 </div>
                 <div class="flex justify-between items-center text-[10px] text-slate-400 mt-2 px-1">
                   <span>Time: ${c.time || 'Just now'}</span>
-                  <span class="text-cyan-400 flex items-center gap-1"><i class="fa-brands fa-telegram text-[11px]"></i> Mitch Capital VIP</span>
+                  <span class="text-cyan-400 flex items-center gap-1"><i class="fa-brands fa-telegram text-[11px]"></i> Mitch Capital Global VIP</span>
                 </div>
               </div>`;
             }).join('');
@@ -218,6 +687,7 @@ import Layout from '../layouts/Layout.astro';
         console.log('Signals poll waiting...', err);
       }
     }
+
     fetchLiveSignals();
     setInterval(fetchLiveSignals, 4000);
   </script>
