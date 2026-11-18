@@ -7,7 +7,7 @@ import Layout from '../layouts/Layout.astro';
 
   <div class="trading-signal-wrapper max-w-7xl mx-auto px-4 sm:px-6 py-12">
     <!-- Hero Section -->
-    <div class="text-center max-w-3xl mx-auto mb-16">
+    <div class="text-center max-w-3xl mx-auto mb-12">
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-950/80 border border-amber-800/80 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-4">
         <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
         Verified Institutional Winrate
@@ -17,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
         <span class="bg-gradient-to-r from-amber-400 via-orange-300 to-yellow-200 bg-clip-text text-transparent">SMC Order Flow Execution</span>
       </h1>
       <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
-        Stop chasing retail indicators. Follow institutional liquidity sweeps with verified 78.5% win rate, disciplined 1:2.8 average Risk/Reward, and real-time MT5 alerts.
+        Stop chasing retail lagging indicators. Follow institutional liquidity sweeps with verified 78.5% win rate, disciplined 1:2.8 average Risk/Reward, and direct real-time MT5 execution telemetry.
       </p>
       <div class="mt-8 flex flex-wrap justify-center gap-4">
         <a href="https://t.me/channelmcg" target="_blank" class="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-bold text-xs uppercase tracking-wider transition-colors shadow-lg shadow-amber-950/50 flex items-center gap-2">
@@ -29,71 +29,196 @@ import Layout from '../layouts/Layout.astro';
       </div>
     </div>
 
-    <!-- Live Signal Cards / Specs Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
-      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
-        <div class="text-3xl font-extrabold text-emerald-400 mb-1">78.5%</div>
-        <div class="text-xs text-slate-400 uppercase font-semibold">Verified Winrate</div>
+    <!-- 4 Key Institutional Metrics -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+        <div class="text-2xl sm:text-3xl font-extrabold text-emerald-400 mb-1">78.5%</div>
+        <div class="text-[11px] text-slate-400 uppercase font-semibold">Verified Winrate</div>
       </div>
-      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
-        <div class="text-3xl font-extrabold text-amber-400 mb-1">1:2.8</div>
-        <div class="text-xs text-slate-400 uppercase font-semibold">Average Risk/Reward</div>
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+        <div class="text-2xl sm:text-3xl font-extrabold text-amber-400 mb-1">1:2.8</div>
+        <div class="text-[11px] text-slate-400 uppercase font-semibold">Average Risk/Reward</div>
       </div>
-      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
-        <div class="text-3xl font-extrabold text-cyan-400 mb-1">&lt; 1%</div>
-        <div class="text-xs text-slate-400 uppercase font-semibold">Max Risk Per Trade</div>
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+        <div class="text-2xl sm:text-3xl font-extrabold text-cyan-400 mb-1">&lt; 1%</div>
+        <div class="text-[11px] text-slate-400 uppercase font-semibold">Max Risk Per Trade</div>
       </div>
-      <div class="p-6 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
-        <div class="text-3xl font-extrabold text-purple-400 mb-1">24/5</div>
-        <div class="text-xs text-slate-400 uppercase font-semibold">Global Market Coverage</div>
+      <div class="p-5 rounded-2xl bg-slate-900/60 border border-slate-800 text-center">
+        <div class="text-2xl sm:text-3xl font-extrabold text-purple-400 mb-1">24/5</div>
+        <div class="text-[11px] text-slate-400 uppercase font-semibold">Global Market Coverage</div>
       </div>
     </div>
 
-    <!-- Live Signal Mock Display -->
-    <div class="p-8 rounded-3xl bg-slate-900/80 border border-slate-800 mb-16">
-      <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
-        <div>
-          <span class="text-xs text-emerald-400 font-bold uppercase">LIVE TELEMETRY DESK</span>
-          <h3 class="text-lg font-bold text-white mt-1">Real-time Institutional Signal Feed</h3>
+    <!-- Dual Live Feeds: MT5 Gold Feed (Left) & Telegram Crypto Feed (Right) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+      <!-- Section 1: MT5 Gold Realtime (7 Cols) -->
+      <div class="lg:col-span-7 space-y-4">
+        <div class="p-6 rounded-3xl bg-slate-900/80 border border-slate-800">
+          <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
+            <div>
+              <span class="text-xs text-amber-400 font-bold uppercase tracking-wider">LIVE MT5 SYNC</span>
+              <h2 class="text-lg font-bold text-white flex items-center gap-2 mt-0.5">
+                <span>🥇 Gold (XAUUSD) Institutional Execution</span>
+              </h2>
+            </div>
+            <span class="px-2.5 py-1 bg-amber-950/80 border border-amber-800/80 text-amber-400 rounded-full text-xs font-semibold flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+              Live MT5 Terminal
+            </span>
+          </div>
+
+          <!-- MT5 Signals Container -->
+          <div id="mt5GoldContainer" class="space-y-4">
+            <div class="p-8 rounded-2xl bg-slate-950/60 border border-slate-800 text-center">
+              <div class="w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-400 flex items-center justify-center mx-auto mb-3 border border-amber-500/20">
+                <i class="fa-solid fa-satellite-dish text-xl animate-pulse"></i>
+              </div>
+              <h4 class="text-base font-bold text-white mb-1">Connecting to MT5 Terminal</h4>
+              <p class="text-xs text-slate-400">Live Gold (XAUUSD) trades will automatically stream here via direct Webhook.</p>
+            </div>
+          </div>
         </div>
-        <span class="px-3 py-1 bg-emerald-950 text-emerald-400 rounded-full text-xs font-semibold animate-pulse">● Live Sync</span>
       </div>
 
-      <div class="space-y-4">
-        <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div class="flex items-center gap-4">
-            <span class="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold text-sm">XAU</span>
+      <!-- Section 2: Telegram Crypto Signals (5 Cols) -->
+      <div class="lg:col-span-5 space-y-4">
+        <div class="p-6 rounded-3xl bg-slate-900/80 border border-slate-800">
+          <div class="flex items-center justify-between mb-6 pb-4 border-b border-slate-800">
             <div>
-              <div class="text-sm font-bold text-white flex items-center gap-2">
-                <span>#XAUUSD (Gold)</span>
-                <span class="px-2 py-0.5 rounded text-xs bg-emerald-950 text-emerald-400 font-semibold">BUY 🟢</span>
-              </div>
-              <div class="text-xs text-slate-400 mt-1">Entry: 3854.89 • SL: 3848.00 • TP: 3870.50</div>
+              <span class="text-xs text-cyan-400 font-bold uppercase tracking-wider">TELEGRAM SYNC</span>
+              <h2 class="text-lg font-bold text-white flex items-center gap-2 mt-0.5">
+                <span>⚡ Crypto VIP Channel Signals</span>
+              </h2>
             </div>
+            <span class="px-2.5 py-1 bg-cyan-950/80 border border-cyan-800/80 text-cyan-400 rounded-full text-xs font-semibold flex items-center gap-1.5">
+              <span class="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
+              Live Channel
+            </span>
           </div>
-          <div class="text-right">
-            <span class="text-xs text-emerald-400 font-bold">+28 pips in profit</span>
-            <div class="text-xs text-slate-500">Triggered 12m ago via MT5 EA</div>
-          </div>
-        </div>
 
-        <div class="p-5 rounded-2xl bg-slate-950 border border-slate-800/80 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
-          <div class="flex items-center gap-4">
-            <span class="w-10 h-10 rounded-xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold text-sm">BTC</span>
-            <div>
-              <div class="text-sm font-bold text-white flex items-center gap-2">
-                <span>#BTCUSDT (Bitcoin)</span>
-                <span class="px-2 py-0.5 rounded text-xs bg-emerald-950 text-emerald-400 font-semibold">BUY 🟢</span>
+          <!-- Telegram Signals Container -->
+          <div id="telegramCryptoContainer" class="space-y-3">
+            <div class="p-8 rounded-2xl bg-slate-950/60 border border-slate-800 text-center">
+              <div class="w-12 h-12 rounded-2xl bg-cyan-500/10 text-cyan-400 flex items-center justify-center mx-auto mb-3 border border-cyan-500/20">
+                <i class="fa-brands fa-telegram text-xl animate-pulse"></i>
               </div>
-              <div class="text-xs text-slate-400 mt-1">Entry: 91,420 • SL: 89,900 • TP: 94,500</div>
+              <h4 class="text-base font-bold text-white mb-1">Awaiting Channel Broadcast</h4>
+              <p class="text-xs text-slate-400">Incoming Crypto VIP signals from Telegram will instantly populate here.</p>
             </div>
-          </div>
-          <div class="text-right">
-            <span class="text-xs text-emerald-400 font-bold">+1.8% gain running</span>
-            <div class="text-xs text-slate-500">Triggered 45m ago via MT5 EA</div>
           </div>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Live Polling Script -->
+  <script is:inline>
+    async function fetchLiveSignals() {
+      try {
+        const res = await fetch('https://signal.smarttrader.vip/api/signals');
+        if (!res.ok) return;
+        const data = await res.json();
+
+        // 1. Render MT5 Gold Trades (Max 5 items)
+        const goldContainer = document.getElementById('mt5GoldContainer');
+        if (goldContainer) {
+          if (data && data.gold_mt5 && data.gold_mt5.length > 0) {
+            goldContainer.innerHTML = data.gold_mt5.slice(0, 5).map(item => {
+              const isOpen = item.status === 'OPEN';
+              const isBuy = (item.type || '').toUpperCase() === 'BUY';
+              const typeClass = isBuy ? 'bg-emerald-500/20 text-emerald-400' : 'bg-rose-500/20 text-rose-400';
+              const profitNum = parseFloat(item.profit || 0);
+              const profitClass = profitNum >= 0 ? 'text-emerald-400' : 'text-rose-400';
+              const profitSign = profitNum >= 0 ? '+' : '';
+
+              if (isOpen) {
+                return `
+                <div class="p-5 rounded-2xl bg-slate-950/90 border border-amber-500/30 relative">
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2.5 py-1 rounded-lg text-xs font-black ${typeClass}">${item.type} NOW</span>
+                      <span class="text-sm font-bold text-white font-mono">${item.symbol}</span>
+                      <span class="text-xs text-slate-400 font-mono">Vol: ${item.volume || 0.1} lot</span>
+                    </div>
+                    <span class="text-xs font-bold text-amber-400 flex items-center gap-1.5">
+                      <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span> RUNNING ${item.pips ? `(+${item.pips}p)` : ''}
+                    </span>
+                  </div>
+                  <div class="grid grid-cols-4 gap-2 p-3 rounded-xl bg-white/[0.02] border border-white/5 font-mono text-xs mb-3">
+                    <div><span class="text-slate-500 block text-[10px]">ENTRY</span><span class="text-slate-200 font-bold">${item.entry || '---'}</span></div>
+                    <div><span class="text-slate-500 block text-[10px]">STOP LOSS</span><span class="text-rose-400 font-bold">${item.sl || '---'}</span></div>
+                    <div><span class="text-slate-500 block text-[10px]">TP1</span><span class="text-emerald-400 font-bold">${item.tp1 || '---'}</span></div>
+                    <div><span class="text-slate-500 block text-[10px]">TP2</span><span class="text-emerald-400 font-bold">${item.tp2 || 'Open'}</span></div>
+                  </div>
+                  <div class="flex items-center justify-between text-xs text-slate-400">
+                    <span>Time: <strong class="text-slate-300 font-mono">${item.time || 'Just now'}</strong></span>
+                    <span>${profitNum !== 0 ? `Unrealized PnL: <strong class="${profitClass} font-bold font-mono">${profitSign}$${Math.abs(profitNum).toFixed(2)}</strong>` : '<span class="text-amber-400 font-medium">Tracking Position</span>'}</span>
+                  </div>
+                </div>`;
+              } else {
+                return `
+                <div class="p-5 rounded-2xl bg-slate-950/60 border border-slate-800 relative">
+                  <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2">
+                      <span class="px-2.5 py-1 rounded-lg text-xs font-black bg-slate-800 text-slate-300">${item.type} (CLOSED)</span>
+                      <span class="text-sm font-bold text-white font-mono">${item.symbol}</span>
+                      <span class="text-xs text-slate-400 font-mono">Vol: ${item.volume || 0.1} lot</span>
+                    </div>
+                    <span class="text-xs font-bold ${profitClass} flex items-center gap-1">
+                      <i class="fa-solid fa-circle-check"></i> ${profitNum >= 0 ? 'PROFIT' : 'STOPPED'}
+                    </span>
+                  </div>
+                  <div class="grid grid-cols-4 gap-2 p-3 rounded-xl bg-white/[0.02] border border-white/5 font-mono text-xs mb-3">
+                    <div><span class="text-slate-500 block text-[10px]">ENTRY</span><span class="text-slate-300 font-bold">${item.entry || '---'}</span></div>
+                    <div><span class="text-slate-500 block text-[10px]">STOP LOSS</span><span class="text-slate-400 font-bold">${item.sl || '---'}</span></div>
+                    <div><span class="text-slate-500 block text-[10px]">CLOSE PRICE</span><span class="text-slate-200 font-bold">${item.close_price || item.entry || '---'}</span></div>
+                    <div><span class="text-slate-500 block text-[10px]">RESULT PNL</span><span class="${profitClass} font-bold font-mono">${profitSign}$${Math.abs(profitNum).toFixed(2)}</span></div>
+                  </div>
+                  <div class="flex items-center justify-between text-xs text-slate-400">
+                    <span>Close Time: ${item.time || 'Today'}</span>
+                    <span class="text-amber-400 font-semibold">100% MT5 Transparency</span>
+                  </div>
+                </div>`;
+              }
+            }).join('');
+          }
+        }
+
+        // 2. Render Telegram Crypto Signals (Max 5 items)
+        const cryptoContainer = document.getElementById('telegramCryptoContainer');
+        if (cryptoContainer) {
+          if (data && data.crypto_telegram && data.crypto_telegram.length > 0) {
+            cryptoContainer.innerHTML = data.crypto_telegram.slice(0, 5).map(c => {
+              const isLong = (c.action || '').toUpperCase() === 'LONG';
+              const actClass = isLong ? 'bg-emerald-500/20 text-emerald-400' : 'bg-rose-500/20 text-rose-400';
+              const tpText = Array.isArray(c.tps) ? c.tps.join(' - ') : c.tps;
+              return `
+              <div class="p-3.5 rounded-2xl bg-slate-950/80 border border-slate-800 hover:border-cyan-500/30 transition-all">
+                <div class="flex items-center justify-between mb-2">
+                  <div class="flex items-center gap-2">
+                    <span class="px-2 py-0.5 rounded text-[10px] font-black ${actClass}">${c.action} ${c.leverage || '20x'}</span>
+                    <span class="text-sm font-bold text-white font-mono">#${c.symbol}</span>
+                  </div>
+                  <span class="text-[11px] font-bold text-emerald-400">${c.status || 'RUNNING'}</span>
+                </div>
+                <div class="text-xs font-mono text-slate-300 flex justify-between bg-white/[0.02] p-2 rounded-lg">
+                  <span>Entry: <strong class="text-white">${c.entry || 'Market'}</strong></span>
+                  <span>SL: <strong class="text-rose-400">${c.sl || '---'}</strong></span>
+                  <span>TP: <strong class="text-emerald-400">${tpText || '---'}</strong></span>
+                </div>
+                <div class="flex justify-between items-center text-[10px] text-slate-400 mt-2 px-1">
+                  <span>Time: ${c.time || 'Just now'}</span>
+                  <span class="text-cyan-400 flex items-center gap-1"><i class="fa-brands fa-telegram text-[11px]"></i> Mitch Capital VIP</span>
+                </div>
+              </div>`;
+            }).join('');
+          }
+        }
+      } catch (err) {
+        console.log('Signals poll waiting...', err);
+      }
+    }
+    fetchLiveSignals();
+    setInterval(fetchLiveSignals, 4000);
+  </script>
 </Layout>
