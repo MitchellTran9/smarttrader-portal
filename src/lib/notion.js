@@ -107,6 +107,22 @@ export async function getArticleBySlug(slug) {
               checkbox: {
                 equals: true
               }
+            },
+            {
+              or: [
+                {
+                  property: 'Language',
+                  select: {
+                    equals: 'EN'
+                  }
+                },
+                {
+                  property: 'Language',
+                  select: {
+                    equals: 'Both'
+                  }
+                }
+              ]
             }
           ]
         }
