@@ -9,6 +9,7 @@ const articles = await getPublishedArticles(category);
 <Layout title="Markets & AI 24/7 | Smart Trader VIP" activeNav="Markets & AI 24/7" description="Live macro intelligence covering Gold (XAUUSD), Bitcoin liquidity injections, central bank policies, and financial AI breakthroughs.">
 
   <section class="max-w-7xl mx-auto px-4 sm:px-6 py-12">
+    <!-- Category Header -->
     <div class="mb-10 text-center max-w-3xl mx-auto">
       <span class="text-xs font-bold uppercase tracking-wider text-blue-400 bg-blue-950/60 border border-blue-800/60 px-3 py-1 rounded-full">Live Global Intelligence</span>
       <h1 class="text-3xl sm:text-4xl font-extrabold text-white mt-4 mb-3">Markets & AI 24/7</h1>
@@ -17,6 +18,68 @@ const articles = await getPublishedArticles(category);
       </p>
     </div>
 
+    <!-- FEATURED CONVERSION AD: VIP TRADING SIGNALS & TELEGRAM -->
+    <div class="mb-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-amber-950/70 via-slate-900 to-slate-950 border-2 border-amber-500/40 shadow-2xl relative overflow-hidden group">
+      <div class="absolute -right-10 -bottom-10 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl group-hover:bg-amber-500/20 transition-all duration-700 pointer-events-none"></div>
+
+      <div class="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+        <!-- Banner Info -->
+        <div class="lg:col-span-8 space-y-4">
+          <div class="flex flex-wrap items-center gap-2.5">
+            <span class="px-3 py-1 rounded-full text-xs font-extrabold uppercase tracking-wider bg-amber-500/20 text-amber-300 border border-amber-500/40 inline-flex items-center gap-1.5 shadow-sm">
+              <span class="w-2 h-2 rounded-full bg-amber-400 animate-ping"></span>
+              👑 VIP SIGNALS: GOLD & CRYPTO
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-800 text-emerald-400 border border-emerald-500/30">
+              Winrate 78.5%
+            </span>
+            <span class="px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-slate-800 text-blue-400 border border-blue-500/30">
+              MT5 Real-Time Webhook
+            </span>
+          </div>
+
+          <h2 class="text-xl sm:text-2xl lg:text-3xl font-extrabold text-white leading-snug">
+            Trade Institutional Setups Alongside Smart Trader VIP Desk
+          </h2>
+
+          <p class="text-xs sm:text-sm text-slate-300 leading-relaxed max-w-2xl">
+            Precision XAUUSD Gold and Bitcoin execution backed by Smart Money Concepts with an average 1:2.8+ Risk-to-Reward ratio. Delivered instantly via Telegram webhook. Lifetime access is <span class="text-amber-300 font-bold">100% free</span> when opening a verified partner account.
+          </p>
+
+          <div class="flex flex-wrap items-center gap-4 text-xs text-slate-400 pt-1">
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Pip-perfect Entry, TP1, TP2 & SL</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> Sub-second MT5 alert latency</span>
+            <span class="flex items-center gap-1.5"><i class="fa-solid fa-check text-emerald-400"></i> 24/7 direct desk assistance</span>
+          </div>
+        </div>
+
+        <!-- Conversion CTAs -->
+        <div class="lg:col-span-4 flex flex-col gap-3">
+          <a
+            href="/vip-trading-signals#vip-flow"
+            class="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-amber-500 to-yellow-500 hover:from-amber-400 hover:to-yellow-400 text-slate-950 font-extrabold text-xs sm:text-sm uppercase tracking-wider transition-all transform hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 shadow-xl shadow-amber-950/60"
+          >
+            <i class="fa-solid fa-crown text-base"></i>
+            <span>ACTIVATE VIP VIA PARTNER BROKER</span>
+          </a>
+
+          <a
+            href="https://t.me/channelmcg"
+            target="_blank"
+            class="w-full py-3 px-5 rounded-xl bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 font-bold text-xs text-center transition-colors flex items-center justify-center gap-2"
+          >
+            <i class="fa-brands fa-telegram text-sky-400 text-sm"></i>
+            <span>Join Free Telegram Channel (@channelmcg) →</span>
+          </a>
+
+          <p class="text-[11px] text-center text-slate-400">
+            Activation Support: <a href="https://t.me/willrichus" target="_blank" class="text-amber-400 font-semibold hover:underline">@willrichus</a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ARTICLE CARDS WITH 16:9 FEATURED THUMBNAILS -->
     {articles.length === 0 ? (
       <div class="text-center py-16 bg-slate-900/50 rounded-2xl border border-slate-800">
         <p class="text-slate-400">No articles published yet in this category. Add new posts via your Notion database!</p>
@@ -24,22 +87,37 @@ const articles = await getPublishedArticles(category);
     ) : (
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {articles.map((art) => (
-          <article class="bg-slate-900/80 border border-slate-800 rounded-2xl p-6 hover:border-blue-500/50 transition-all flex flex-col justify-between hover:shadow-xl">
+          <article class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden hover:border-blue-500/50 transition-all flex flex-col justify-between group shadow-xl">
             <div>
-              <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
-                <span class="text-blue-400 font-semibold">Markets & AI</span>
-                <span>{art.date}</span>
+              <!-- 16:9 THUMBNAIL -->
+              <a href={`/p/${art.slug}`} class="block aspect-video overflow-hidden bg-slate-950 border-b border-slate-800">
+                <img
+                  src={art.featuredImage}
+                  alt={art.title}
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  loading="lazy"
+                />
+              </a>
+
+              <div class="p-6">
+                <div class="flex items-center justify-between text-xs text-slate-400 mb-3">
+                  <span class="text-blue-400 font-semibold">Markets & AI</span>
+                  <span>{art.date}</span>
+                </div>
+                <h2 class="text-lg font-bold text-white hover:text-blue-300 transition-colors mb-3 leading-snug">
+                  <a href={`/p/${art.slug}`}>{art.title}</a>
+                </h2>
+                <p class="text-xs sm:text-sm text-slate-400 line-clamp-3 mb-4 leading-relaxed">
+                  {art.summary}
+                </p>
               </div>
-              <h2 class="text-lg font-bold text-white hover:text-blue-300 transition-colors mb-3 leading-snug">
-                <a href={`/p/${art.slug}`}>{art.title}</a>
-              </h2>
-              <p class="text-xs sm:text-sm text-slate-400 line-clamp-3 mb-6 leading-relaxed">
-                {art.summary}
-              </p>
             </div>
-            <a href={`/p/${art.slug}`} class="text-xs font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1.5">
-              Read Full Article →
-            </a>
+
+            <div class="px-6 pb-6 pt-2 border-t border-slate-800/60">
+              <a href={`/p/${art.slug}`} class="text-xs font-semibold text-blue-400 hover:text-blue-300 flex items-center gap-1.5">
+                Read Full Article →
+              </a>
+            </div>
           </article>
         ))}
       </div>
