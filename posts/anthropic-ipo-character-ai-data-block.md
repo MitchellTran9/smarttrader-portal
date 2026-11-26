@@ -9,8 +9,8 @@ published: true
 
 ## 24-Hour Macro & Technology Overview
 
-![24-Hour Macro & Tech Landscape](https://raw.githubusercontent.com/MitchellTran9/smarttrader-portal/main/public/images/articles/anthropic-ipo-character-ai-data-block/section_1.jpg?v=11728)
-*Billion-dollar AI IPO momentum meets stringent state-level regulatory enforcement over user conversation data privacy.*
+![24-Hour Macro & Tech Landscape](https://raw.githubusercontent.com/MitchellTran9/smarttrader-portal/main/public/images/articles/anthropic-ipo-character-ai-data-block/section_1.jpg?v=11831)
+*US states tighten legal regulations and user data privacy enforcement regarding artificial intelligence technologies.*
 
 The global financial and technology markets over the past 24 hours have witnessed historic turning points as the boundary between large-scale tech valuations and human-centric data stewardship faces intense scrutiny. **[TechCrunch AI]** reports a groundbreaking development as **Anthropic officially enters the public markets via IPO**, opening a new era for institutional capital deployment into leading large language models. Concurrently, regulatory pressure from state authorities is mounting unprecedentedly, highlighted by **[The Verge AI] noting that 42 US state attorneys general are joining forces to block Character.AI from selling user chat data** amid its Chapter 11 bankruptcy proceedings. This dichotomy reflects a volatile macroeconomic landscape: on one hand, massive capital craving AI efficiency and speed; on the other hand, stringent regulatory walls designed to safeguard individual privacy.
 
